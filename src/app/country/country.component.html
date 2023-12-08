@@ -1,0 +1,6 @@
+<h1>Country component</h1>
+<ul>
+    <li *ngFor="let country of countries$ | async">
+      <a [routerLink]="['/countries', country?.name?.common]">{{ country?.name.common }}</a>
+    </li>
+  </ul>
